@@ -1638,8 +1638,44 @@
 #define SPECIES_MIMIKYU_BUSTED_TOTEM                    1523
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    SPECIES_MIMIKYU_BUSTED_TOTEM
 
-#define SPECIES_EGG                                     (SPECIES_MIMIKYU_BUSTED_TOTEM + 1)
+#define SPECIES_CHARMANDER_CONNOR                     1524
+#define SPECIES_CHARMELEON_CONNOR                     1525
+#define SPECIES_CHARIZARD_CONNOR                      1526
+#define SPECIES_BULBASAUR_CONNOR                      1527
+#define SPECIES_IVYSAUR_CONNOR                        1528
+#define SPECIES_VENUSAUR_CONNOR                       1529
+#define SPECIES_SQUIRTLE_CONNOR                       1530
+#define SPECIES_WARTORTLE_CONNOR                      1531
+#define SPECIES_BLASTOISE_CONNOR                      1532
+#define SPECIES_CATERPIE_CONNOR                       1533
+#define SPECIES_METAPOD_CONNOR                        1534
+#define SPECIES_BUTTERFREE_CONNOR                     1535
+#define SPECIES_WEEDLE_CONNOR                         1536
+#define SPECIES_KAKUNA_CONNOR                         1537
+#define SPECIES_BEEDRILL_CONNOR                       1538
+#define SPECIES_DELTA_KABUTO                          1539
+#define SPECIES_DELTA_KABUTOPS                        1540
+#define SPECIES_DELTA_SPINARAK                        1541
+#define SPECIES_DELTA_ARIADOS                         1542
+#define SPECIES_DELTA_YANMA                           1543
+#define SPECIES_DELTA_YANMEGA                         1544
+#define SPECIES_GLIGAR_CONNOR                         1545
+#define SPECIES_GLISCOR_CONNOR                        1546
+#define SPECIES_DELTA_COMBEE                          1547
+#define SPECIES_DELTA_VESPIQUEN                       1548
+#define SPECIES_SKORUPI_CONNOR                        1549
+#define SPECIES_DRAPION_CONNOR                        1550
+#define SPECIES_DELTA_DURANT                          1551
+#define SPECIES_DELTA_SANDILE                         1552
+#define SPECIES_DELTA_KROKOROK                        1553
+#define SPECIES_DELTA_KROOKODILE                      1554
+#define SPECIES_DELTA_LARVESTA                        1555
+#define SPECIES_DELTA_VOLCARONA                       1556
+#define SPECIES_DELTA_TYRUNT                          1557
+#define SPECIES_DELTA_TYRANTRUM                       1558
+#define SPECIES_DELTA_DRACOVISH                       1559
 
+#define SPECIES_EGG                                     (SPECIES_DELTA_DRACOVISH + 1)
 #define NUM_SPECIES SPECIES_EGG
 
 #define SPECIES_SHINY_TAG 5000

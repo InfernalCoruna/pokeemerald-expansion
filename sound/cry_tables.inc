@@ -2424,6 +2424,25 @@ gCryTable::
 .if P_FAMILY_PECHARUNT == TRUE
 	cry Cry_Pecharunt
 .endif @ P_FAMILY_PECHARUNT
+  cry Cry_Soggmander
+cry Cry_Soggmeleon
+cry Cry_Soggizard
+cry Cry_Cindesaur
+cry Cry_Charresaur
+cry Cry_Scorresaur
+cry Cry_Mosstle
+cry Cry_Mosstortle
+cry Cry_Algetoise
+cry Cry_Caterphi
+cry Cry_Chrysapod
+cry Cry_Butterfae
+cry Cry_Drondle
+cry Cry_Drokuna
+cry Cry_Drondle
+cry Cry_Icegar
+cry Cry_Icescor
+cry Cry_Skorvolt
+cry Cry_Drapiamp
 .endif @ P_CRIES_ENABLED
 
 	.align 2
@@ -4852,4 +4871,23 @@ gCryTable_Reverse::
 .if P_FAMILY_PECHARUNT == TRUE
 	cry_reverse Cry_Pecharunt
 .endif @ P_FAMILY_PECHARUNT
+cry_reverse Cry_Soggmander
+cry_reverse Cry_Soggmeleon
+cry_reverse Cry_Soggizard
+cry_reverse Cry_Cindesaur
+cry_reverse Cry_Charresaur
+cry_reverse Cry_Scorresaur
+cry_reverse Cry_Mosstle
+cry_reverse Cry_Mosstortle
+cry_reverse Cry_Algetoise
+cry_reverse Cry_Caterphi
+cry_reverse Cry_Chrysapod
+cry_reverse Cry_Butterfae
+cry_reverse Cry_Drondle
+cry_reverse Cry_Drokuna
+cry_reverse Cry_Drondle
+cry_reverse Cry_Icegar
+cry_reverse Cry_Icescor
+cry_reverse Cry_Skorvolt
+cry_reverse Cry_Drapiamp
 .endif @ P_CRIES_ENABLED

@@ -6727,4 +6727,39 @@ static const struct SpriteFrameImage sPicTable_Pecharunt[] = {
 };
 #endif //P_FAMILY_PECHARUNT
 
+static const struct SpriteFrameImage sPicTable_Soggmander[] = {
+      overworld_ascending_frames(gObjectEventPic_Soggmander, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Soggmeleon[] = {
+      overworld_ascending_frames(gObjectEventPic_Soggmeleon, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Soggizard[] = {
+      overworld_ascending_frames(gObjectEventPic_Soggizard, 4, 4),
+};
+static const struct SpriteFrameImage sPicTable_Cindesaur[] = {
+      overworld_ascending_frames(gObjectEventPic_Cindesaur, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Charresaur[] = {
+      overworld_ascending_frames(gObjectEventPic_Charresaur, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Scorresaur[] = {
+      overworld_ascending_frames(gObjectEventPic_Scorresaur, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Mosstle[] = {
+      overworld_ascending_frames(gObjectEventPic_Mosstle, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Mosstortle[] = {
+      overworld_ascending_frames(gObjectEventPic_Mosstortle, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Algetoise[] = {
+      overworld_ascending_frames(gObjectEventPic_Algetoise, 4, 4),
+};
+
 #endif //OW_POKEMON_OBJECT_EVENTS
