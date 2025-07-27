@@ -4,6 +4,9 @@
 #define LAND_WILD_COUNT     12
 #define WATER_WILD_COUNT    5
 #define ROCK_WILD_COUNT     5
+#define OTHER_WILD_COUNT    5
+#define LAVA_WILD_COUNT     5
+#define HEADBUTT_WILD_COUNT     5
 #define FISH_WILD_COUNT     10
 #define HIDDEN_WILD_COUNT   3
 

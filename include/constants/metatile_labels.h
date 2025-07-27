@@ -133,6 +133,9 @@
 #define METATILE_Cave_ShoalCave_DirtPile_Large           0x358
 #define METATILE_Cave_ShoalCave_DirtPile_Small           0x35A
 
+// gTileset_Connor
+#define METATILE_Connor_METATILE_Mauville_DEEP_SAND  0x005
+
 // gTileset_Contest
 #define METATILE_Contest_CounterFlap_Bottom  0x2D9
 #define METATILE_Contest_CounterFlap_Top     0x2D1
