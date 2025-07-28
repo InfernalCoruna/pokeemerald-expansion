@@ -55,4 +55,9 @@ bool8 FldEff_UseRockSmash(void);
 bool8 SetUpFieldMove_Defog(void);
 bool8 FldEff_Defog(void);
 
+// headbutt
+bool8 FldEff_UseHeadbutt(void);
+bool8 SetUpFieldMove_Headbutt(void);
+
+
 #endif // GUARD_FLDEFF_H

@@ -11,7 +11,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_NORMAL]                             = TILE_FLAG_UNUSED,
     [MB_TALL_GRASS]                         = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_LONG_GRASS]                         = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
-    [MB_OTHER_ENCOUNTER]                    = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,                           
+    [MB_OTHER_ENCOUNTER]                    = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_DEEP_SAND]                          = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_SHORT_GRASS]                        = TILE_FLAG_UNUSED,
     [MB_CAVE]                               = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
@@ -362,14 +362,6 @@ bool8 MetatileBehavior_IsIce_2(u8 metatileBehavior)
 bool8 MetatileBehavior_IsTrickHouseSlipperyFloor(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_TRICK_HOUSE_PUZZLE_8_FLOOR)
-        return TRUE;
-    else
-        return FALSE;
-}
-
-bool8 Unref_MetatileBehavior_IsUnused05(u8 metatileBehavior)
-{
-    if (metatileBehavior == MB_UNUSED_05)
         return TRUE;
     else
         return FALSE;
@@ -820,7 +812,9 @@ bool8 MetatileBehavior_IsBridgeOverWaterNoEdge(u8 metatileBehavior)
 bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior)
 {
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
-     && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
+     && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE
+        && MetatileBehavior_IsSurfableFishablelava(metatileBehavior) == FALSE
+        && MetatileBehavior_IsOtherWildEncounter(metatileBehavior) == FALSE)
         return TRUE;
     else
         return FALSE;
@@ -829,7 +823,9 @@ bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior)
 bool8 MetatileBehavior_IsWaterWildEncounter(u8 metatileBehavior)
 {
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == TRUE
-     && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
+     && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE
+        && MetatileBehavior_IsSurfableFishablelava(metatileBehavior) == FALSE
+        && MetatileBehavior_IsOtherWildEncounter(metatileBehavior) == FALSE)
         return TRUE;
     else
         return FALSE;
@@ -838,8 +834,20 @@ bool8 MetatileBehavior_IsWaterWildEncounter(u8 metatileBehavior)
 bool8 MetatileBehavior_IsOtherWildEncounter(u8 metatileBehavior)
 {
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
+        && MetatileBehavior_IsSurfableFishablelava(metatileBehavior) == FALSE
         && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE
-        && metatileBehavior == MB_OTHER_ENCOUNTER)
+        && metatileBehavior == MB_OTHER_ENCOUNTER) 
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsLavaWildEncounter(u8 metatileBehavior)
+{
+    if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
+        && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE
+        && MetatileBehavior_IsOtherWildEncounter(metatileBehavior) == FALSE
+        && MetatileBehavior_IsSurfableFishablelava(metatileBehavior) == TRUE)
         return TRUE;
     else
         return FALSE;
@@ -1172,6 +1180,14 @@ bool8 MetatileBehavior_IsMossdeepGymWarp(u8 metatileBehavior)
 bool8 MetatileBehavior_IsSurfableFishablelava(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_DEEP_LAVA)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsHeadbuttTree(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_HEADBUTT)
         return TRUE;
     else
         return FALSE;

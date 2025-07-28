@@ -254,7 +254,7 @@
     },
     {
       "type": "sign",
-      "x": 7,
+      "x": 18,
       "y": 8,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

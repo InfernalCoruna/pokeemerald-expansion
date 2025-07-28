@@ -297,7 +297,7 @@ u8 ChooseWildMonIndex_Lava(void)
     return wildMonIndex;
 }
 
-u8 ChooseWildMonIndex_Headbutt(void)
+u8ChooseWildMonIndex_Headbutt(void)
 {
     u8 wildMonIndex = 0;
     bool8 swap = FALSE;
@@ -1348,6 +1348,57 @@ u16 GetLocalWaterMon(void)
 
         if (waterMonsInfo)
             return waterMonsInfo->wildPokemon[ChooseWildMonIndex_WaterRock()].species;
+    }
+    return SPECIES_NONE;
+}
+
+u16 GetLocalOtherMon(void)
+{
+    u32 headerId = GetCurrentMapWildMonHeaderId();
+    enum TimeOfDay timeOfDay;
+
+    if (headerId != HEADER_NONE)
+    {
+        timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_OTHER);
+
+        const struct WildPokemonInfo* otherMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].otherMonsInfo;
+
+        if (otherMonsInfo)
+            return otherMonsInfo->wildPokemon[ChooseWildMonIndex_Other()].species;
+    }
+    return SPECIES_NONE;
+}
+
+u16 GetLocalLavaMon(void)
+{
+    u32 headerId = GetCurrentMapWildMonHeaderId();
+    enum TimeOfDay timeOfDay;
+
+    if (headerId != HEADER_NONE)
+    {
+        timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_LAVA);
+
+        const struct WildPokemonInfo* lavaMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].lavaMonsInfo;
+
+        if (lavaMonsInfo)
+            return lavaMonsInfo->wildPokemon[ChooseWildMonIndex_Lava()].species;
+    }
+    return SPECIES_NONE;
+}
+
+u16 GetLocalHeadbuttMon(void)
+{
+    u32 headerId = GetCurrentMapWildMonHeaderId();
+    enum TimeOfDay timeOfDay;
+
+    if (headerId != HEADER_NONE)
+    {
+        timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_HEADBUTT);
+
+        const struct WildPokemonInfo* headbuttMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].headbuttMonsInfo;
+
+        if (headbuttMonsInfo)
+            return headbuttMonsInfo->wildPokemon[ChooseWildMonIndex_Headbutt()].species;
     }
     return SPECIES_NONE;
 }
