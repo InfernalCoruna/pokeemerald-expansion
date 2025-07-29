@@ -297,7 +297,7 @@ u8 ChooseWildMonIndex_Lava(void)
     return wildMonIndex;
 }
 
-u8ChooseWildMonIndex_Headbutt(void)
+u8 ChooseWildMonIndex_Headbutt(void)
 {
     u8 wildMonIndex = 0;
     bool8 swap = FALSE;
