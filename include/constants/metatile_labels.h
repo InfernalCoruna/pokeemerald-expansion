@@ -134,7 +134,24 @@
 #define METATILE_Cave_ShoalCave_DirtPile_Small           0x35A
 
 // gTileset_Connor
-#define METATILE_Connor_METATILE_Mauville_DEEP_SAND  0x005
+#define METATILE_Connor_CaveEntrance_Bottom   0x06E
+#define METATILE_Connor_CaveEntrance_Top      0x066
+#define METATILE_Connor_Deep_Sand             0x09D
+#define METATILE_Connor_Door_PokeCenter       0x021
+#define METATILE_Connor_Grass_TreeUp          0x005
+#define METATILE_Connor_MuddySlope_Frame0     0x079
+#define METATILE_Connor_MuddySlope_Frame1     0x07A
+#define METATILE_Connor_MuddySlope_Frame2     0x07B
+#define METATILE_Connor_MuddySlope_Frame3     0x07C
+#define METATILE_Connor_RedCaveIndent         0x06F
+#define METATILE_Connor_RedCaveOpen           0x067
+#define METATILE_Connor_ReflectiveWater       0x054
+#define METATILE_Connor_RockWall_GrassBase    0x019
+#define METATILE_Connor_SecretBase_TreeLeft   0x01C
+#define METATILE_Connor_SecretBase_TreeRight  0x01D
+#define METATILE_Connor_SecretBase_VineLeft   0x02C
+#define METATILE_Connor_SecretBase_VineRight  0x02D
+#define METATILE_Connor_TallGrass_TreeUp      0x006
 
 // gTileset_Contest
 #define METATILE_Contest_CounterFlap_Bottom  0x2D9

@@ -4651,6 +4651,47 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall = {
     .anims = sAnimTable_Following,
     .images = sPicTable_PokeBall,
     .affineAnims = gDummySpriteAffineAnimTable,
+
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBallBurriedLeft = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 16,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Following,
+    .images = sPicTable_PokeBallBurriedLeft,
+    .affineAnims = gDummySpriteAffineAnimTable,
+
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBallBurriedRight = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 16,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Following,
+    .images = sPicTable_PokeBallBurriedRight,
+    .affineAnims = gDummySpriteAffineAnimTable,
+
 };
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower = {

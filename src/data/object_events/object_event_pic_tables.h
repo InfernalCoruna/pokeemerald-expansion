@@ -976,6 +976,14 @@ static const struct SpriteFrameImage sPicTable_GroudonSide[] = {
     overworld_frame(gObjectEventPic_GroudonOld, 4, 4, 3),
 };
 
+static const struct SpriteFrameImage sPicTable_PokeBallBurriedRight[] = {
+    obj_frame_tiles(gObjectEventPic_PokeBallBurriedRight),
+};
+
+static const struct SpriteFrameImage sPicTable_PokeBallBurriedLeft[] = {
+    obj_frame_tiles(gObjectEventPic_PokeBallBurriedLeft),
+};
+
 static const struct SpriteFrameImage sPicTable_Fossil[] = {
     obj_frame_tiles(gObjectEventPic_Fossil),
 };
