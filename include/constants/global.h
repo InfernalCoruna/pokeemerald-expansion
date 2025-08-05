@@ -15,9 +15,9 @@
 
 // Invalid Versions show as "----------" in Gen 4 and Gen 5's summary screen.
 // In Gens 6 and 7, invalid versions instead show "a distant land" in the summary screen.
-// In Gen 4 only, migrated Pokémon with Diamond, Pearl, or Platinum's ID show as "----------".
+// In Gen 4 only, migrated Pok�mon with Diamond, Pearl, or Platinum's ID show as "----------".
 // Gen 5 and up read Diamond, Pearl, or Platinum's ID as "Sinnoh".
-// In Gen 4 and up, migrated Pokémon with HeartGold or SoulSilver's ID show the otherwise unused "Johto" string.
+// In Gen 4 and up, migrated Pok�mon with HeartGold or SoulSilver's ID show the otherwise unused "Johto" string.
 #define VERSION_SAPPHIRE 1
 #define VERSION_RUBY 2
 #define VERSION_EMERALD 3
@@ -63,11 +63,14 @@
 #define SECRET_BASES_COUNT 20
 #define POKE_NEWS_COUNT 16
 #define PC_ITEMS_COUNT 50
-#define BAG_ITEMS_COUNT 30
+#define BAG_ITEMS_COUNT 40
 #define BAG_KEYITEMS_COUNT 30
 #define BAG_POKEBALLS_COUNT 16
 #define BAG_TMHM_COUNT 64
 #define BAG_BERRIES_COUNT 46
+#define BAG_MEDICINE_COUNT 34
+#define BAG_BATTLEITEMS_COUNT 47
+#define BAG_TREASURES_COUNT 18
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 12
