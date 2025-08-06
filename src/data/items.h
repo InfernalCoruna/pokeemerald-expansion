@@ -2508,7 +2508,7 @@ const struct Item gItemsInfo[] =
             "Raises every stat\n"
             "during one battle\n"
             "by one stage."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_ALL_STATS,
@@ -2527,7 +2527,7 @@ const struct Item gItemsInfo[] =
             "A beautiful bottle\n"
             "cap that gives off\n"
             "a silver gleam."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2543,7 +2543,7 @@ const struct Item gItemsInfo[] =
             "A beautiful bottle\n"
             "cap that gives off\n"
             "a golden gleam."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2559,7 +2559,7 @@ const struct Item gItemsInfo[] =
             "A nugget of pure\n"
             "gold. Can be sold at\n"
             "a high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2575,7 +2575,7 @@ const struct Item gItemsInfo[] =
             "A big nugget made\n"
             "of gold, sellable\n"
             "at a high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 130,
@@ -2591,7 +2591,7 @@ const struct Item gItemsInfo[] =
             "A plain mushroom\n"
             "that would sell\n"
             "at a cheap price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2604,7 +2604,7 @@ const struct Item gItemsInfo[] =
         .name = _("Big Mushroom"),
         .price = 5000 * TREASURE_FACTOR,
         .description = sBigMushroomDesc,
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2617,7 +2617,7 @@ const struct Item gItemsInfo[] =
         .name = _("Balm Mushroom"),
         .price = (I_PRICE >= GEN_7) ? 15000 * TREASURE_FACTOR: 12500,
         .description = sBigMushroomDesc,
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2633,7 +2633,7 @@ const struct Item gItemsInfo[] =
             "A pretty pearl\n"
             "that would sell at a\n"
             "cheap price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2649,7 +2649,7 @@ const struct Item gItemsInfo[] =
             "A lovely large pearl\n"
             "that would sell at a\n"
             "high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2665,7 +2665,7 @@ const struct Item gItemsInfo[] =
             "Very large pearls\n"
             "that would sell at a\n"
             "high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2682,7 +2682,7 @@ const struct Item gItemsInfo[] =
             "Beautiful red sand.\n"
             "Can be sold at a\n"
             "high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2698,7 +2698,7 @@ const struct Item gItemsInfo[] =
             "A red gem shard.\n"
             "It would sell for a\n"
             "very high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2714,7 +2714,7 @@ const struct Item gItemsInfo[] =
             "A comet's shard.\n"
             "It would sell for a\n"
             "high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2731,7 +2731,7 @@ const struct Item gItemsInfo[] =
             "Salt obtained from\n"
             "deep inside the\n"
             "Shoal Cave."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2747,7 +2747,7 @@ const struct Item gItemsInfo[] =
             "A seashell found\n"
             "deep inside the\n"
             "Shoal Cave."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2760,7 +2760,7 @@ const struct Item gItemsInfo[] =
         .name = _("Red Shard"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .description = sShardsDesc,
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2773,7 +2773,7 @@ const struct Item gItemsInfo[] =
         .name = _("Blue Shard"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .description = sShardsDesc,
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2786,7 +2786,7 @@ const struct Item gItemsInfo[] =
         .name = _("Yellow Shard"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .description = sShardsDesc,
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2799,7 +2799,7 @@ const struct Item gItemsInfo[] =
         .name = _("Green Shard"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .description = sShardsDesc,
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2815,7 +2815,7 @@ const struct Item gItemsInfo[] =
             "A lovely scale.\n"
             "It is coveted by\n"
             "collectors."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2848,7 +2848,7 @@ const struct Item gItemsInfo[] =
             "A very rare bone.\n"
             "It can be sold at\n"
             "a high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -2864,7 +2864,7 @@ const struct Item gItemsInfo[] =
             "Voices can be heard\n"
             "from this odd stone\n"
             "occasionally."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -2880,7 +2880,7 @@ const struct Item gItemsInfo[] =
             "A beautiful yet\n"
             "plain feather that\n"
             "does nothing."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 20,
@@ -2896,7 +2896,7 @@ const struct Item gItemsInfo[] =
             "A copper coin used\n"
             "long ago. It sells\n"
             "at a high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2912,7 +2912,7 @@ const struct Item gItemsInfo[] =
             "A silver coin used\n"
             "long ago. It sells\n"
             "at a high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2928,7 +2928,7 @@ const struct Item gItemsInfo[] =
             "A gold coin used\n"
             "long ago. It sells\n"
             "at a high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2944,7 +2944,7 @@ const struct Item gItemsInfo[] =
             "A vase made long\n"
             "ago. It sells at\n"
             "a high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2960,7 +2960,7 @@ const struct Item gItemsInfo[] =
             "An old bracelet.\n"
             "It sells at a\n"
             "high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2976,7 +2976,7 @@ const struct Item gItemsInfo[] =
             "An old statue.\n"
             "It sells at a\n"
             "high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2992,7 +2992,7 @@ const struct Item gItemsInfo[] =
             "An old crown.\n"
             "It sells at a\n"
             "high price."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -3008,7 +3008,7 @@ const struct Item gItemsInfo[] =
             "An ornament that\n"
             "depicts a Pokémon\n"
             "from Alola."),
-        .pocket = POCKET_TREASURE,
+        .pocket = POCKET_TREASURES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,

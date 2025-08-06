@@ -16,7 +16,7 @@ gText_Birch_MainSpeech::
 	.string "creatures known as POKéMON.\p"
 	.string "We humans live alongside POKéMON,\n"
 	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
+	.string "at times as 'playmates' uwu.\p"
 	.string "And sometimes, we band together\n"
 	.string "and battle others like us.\p"
 	.string "But despite our closeness, we don't\n"
@@ -24,8 +24,8 @@ gText_Birch_MainSpeech::
 	.string "In fact, there are many, many\n"
 	.string "secrets surrounding POKéMON.\p"
 	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
+	.string "I've been undertaking 'research'.\l"
+	.string "Please Don't tell my wife.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
@@ -44,18 +44,19 @@ gText_Birch_SoItsPlayer::
 
 gText_Birch_YourePlayer::
 	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
+	.string "{PLAYER}{KUN} I can tell we are the same\n"
+	.string "you and I.\l"
 	.string "I get it now!\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
 	.string "All right, are you ready?\p"
-	.string "Your very own adventure is about\n"
+	.string "Your very own 'adventure' is about\n"
 	.string "to unfold.\p"
 	.string "Take courage, and leap into the\n"
-	.string "world of POKéMON where dreams,\l"
-	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
+	.string "world's POKéMON, where dreams,\l"
+	.string "adventure, and 'friendships' await!\p"
+	.string "Follow me I know where just the right\n"
+	.string "POKEMON awaits you.\p"
+	.string "We just need to make this small jump!\n"
 	.string "$"

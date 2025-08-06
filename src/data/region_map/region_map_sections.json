@@ -1561,7 +1561,7 @@
     },
     {
       "id": "MAPSEC_EMBER_SPA",
-      "name": "EMBER SPA",
+      "name": "Giant Chasm",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1702,6 +1702,10 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_GIANT_CHASM",
+      "name": "Giant Chasm"
     }
   ]
 }

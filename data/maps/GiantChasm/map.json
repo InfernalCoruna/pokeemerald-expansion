@@ -2,14 +2,14 @@
   "id": "MAP_GIANT_CHASM",
   "name": "GiantChasm",
   "layout": "LAYOUT_GIANT_CHASM",
-  "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "music": "MUS_AWAKEN_LEGEND",
+  "region_map_section": "MAPSEC_FALLARBOR_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
-  "allow_cycling": false,
+  "weather": "WEATHER_RAIN",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
   "allow_escaping": false,
-  "allow_running": false,
+  "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GiantChasm_EventScript_Birch",
       "flag": "0"
     },
     {
@@ -37,11 +37,93 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GiantChasm_EventScript_BirchsBag",
       "flag": "0"
     }
   ],
   "warp_events": [],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "GiantChasm_EventScript_PreventExitSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "GiantChasm_EventScript_PreventExitSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "GiantChasm_EventScript_PreventExitSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "GiantChasm_EventScript_PreventExitSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "GiantChasm_EventScript_PreventExitWest"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "GiantChasm_EventScript_PreventExitWest"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "GiantChasm_EventScript_PreventExitNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "1",
+      "script": "GiantChasm_EventScript_PreventExitNorth"
+    }
+  ],
   "bg_events": []
 }
