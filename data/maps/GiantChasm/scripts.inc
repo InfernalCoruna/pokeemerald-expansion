@@ -42,8 +42,9 @@ GiantChasm_Movement_PreventExitNorth:
 
 GiantChasm_EventScript_BirchsBag::
 	lock
+	goto_if_set FLAG_SYS_POKEMON_GET, GiantChasm_EventScript_Got_PKMN
 	faceplayer
-    setvar VAR_ROUTE101_STATE, 2
+    setvar VAR_GIANT_CHASM_STATE, 1
 	setflag FLAG_SYS_POKEMON_GET
 	fadescreen FADE_TO_BLACK
 	setobjectxy LOCALID_PLAYER, 15, 10
@@ -52,7 +53,12 @@ GiantChasm_EventScript_BirchsBag::
 	special ChooseStarter
 	waitstate
 	release
+	call Common_EventScript_NameReceivedPartyMon
 	end
+
+GiantChasm_EventScript_Got_PKMN::
+ msgbox GiantChasm_Text_Run_Wild, MSGBOX_NPC
+ end
 
 GiantChasm_EventScript_Dead::
  msgbox GiantChasm_Text_DeaderTree, MSGBOX_NPC
@@ -60,10 +66,10 @@ GiantChasm_EventScript_Dead::
 
 GiantChasm_EventScript_Birch::
         lock
-        goto_if_set 0x1DF, GiantChasm_EventScript_Dead
+        goto_if_set DN_FLAG_DEXNAV_GET, GiantChasm_EventScript_Dead
         msgbox GiantChasm_Text_DeadTree, MSGBOX_NPC
         giveitem ITEM_ESCAPE_ROPE 1
-        giveitem ITEM_EXP_SHARE 1
+        giveitem ITEM_EXP_SHARE 5
         giveitem ITEM_OVAL_CHARM 1
         giveitem ITEM_SHINY_CHARM 1
         giveitem ITEM_CATCHING_CHARM 1
@@ -79,10 +85,13 @@ GiantChasm_EventScript_Birch::
         giveitem ITEM_TERA_ORB 1
         msgbox GiantChasm_Text_Pokedex, MSGBOX_DEFAULT
 		setflag FLAG_SYS_POKEDEX_GET
-		setflag FLAG_SYS_NATIONAL_DEX
-	    special EnableNationalPokedex
+		setflag FLAG_ADVENTURE_STARTED
+		special SetUnlockedPokedexFlags
+		Setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
 		msgbox GiantChasm_Text_Dexnav, MSGBOX_DEFAULT
-		setflag 0x1DF 
+		setflag DN_FLAG_DEXNAV_GET 
+		setflag FLAG_SYS_POKENAV_GET
+		msgbox GiantChasm_Text_Pokenav, MSGBOX_DEFAULT
 		giveitem ITEM_POKE_BALL 20
         release
 	    end
@@ -105,3 +114,9 @@ GiantChasm_Text_Pokedex:
 
 GiantChasm_Text_Dexnav:
         .string "{PLAYER} recieved the DEXNAV!$"
+
+GiantChasm_Text_Pokenav:
+        .string "{PLAYER} recieved the POKENAV!$"
+
+GiantChasm_Text_Run_Wild:
+        .string "The other two pokemon escaped!$"

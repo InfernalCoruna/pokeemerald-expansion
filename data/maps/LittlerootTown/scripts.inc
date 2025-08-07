@@ -887,7 +887,6 @@ LittlerootTown_EventScript_Mom::
 
 LittlerootTown_EventScript_SetReceivedRunningShoes::
 	setflag FLAG_SYS_B_DASH
-        setflag FLAG_UNUSED_0x1DF 
 	setvar VAR_LITTLEROOT_TOWN_STATE, 4
 	release
 	end

@@ -623,6 +623,7 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_OverworldLocations": [
-    "GiantChasm"
+    "GiantChasm",
+    "GiantChasmNorth"
   ]
 }

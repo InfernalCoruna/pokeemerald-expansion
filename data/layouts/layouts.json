@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_test",
       "border_filepath": "data/layouts/GiantChasm/border.bin",
       "blockdata_filepath": "data/layouts/GiantChasm/map.bin"
+    },
+    {
+      "id": "LAYOUT_GIANT_CHASM_NORTH",
+      "name": "GiantChasmNorth_Layout",
+      "width": 32,
+      "height": 24,
+      "primary_tileset": "gTileset_Connor",
+      "secondary_tileset": "gTileset_test",
+      "border_filepath": "data/layouts/GiantChasmNorth/border.bin",
+      "blockdata_filepath": "data/layouts/GiantChasmNorth/map.bin"
     }
   ]
 }

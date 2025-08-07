@@ -3,7 +3,7 @@
   "name": "GiantChasm",
   "layout": "LAYOUT_GIANT_CHASM",
   "music": "MUS_AWAKEN_LEGEND",
-  "region_map_section": "MAPSEC_FALLARBOR_TOWN",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_RAIN",
   "map_type": "MAP_TYPE_ROUTE",
@@ -12,7 +12,13 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": [
+    {
+      "map": "MAP_GIANT_CHASM_NORTH",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
@@ -48,8 +54,8 @@
       "x": 15,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "1",
+      "var": "VAR_GIANT_CHASM_STATE",
+      "var_value": "0",
       "script": "GiantChasm_EventScript_PreventExitSouth"
     },
     {
@@ -57,8 +63,8 @@
       "x": 16,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "1",
+      "var": "VAR_GIANT_CHASM_STATE",
+      "var_value": "0",
       "script": "GiantChasm_EventScript_PreventExitSouth"
     },
     {
@@ -66,8 +72,8 @@
       "x": 17,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "1",
+      "var": "VAR_GIANT_CHASM_STATE",
+      "var_value": "0",
       "script": "GiantChasm_EventScript_PreventExitSouth"
     },
     {
@@ -75,8 +81,8 @@
       "x": 18,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "1",
+      "var": "VAR_GIANT_CHASM_STATE",
+      "var_value": "0",
       "script": "GiantChasm_EventScript_PreventExitSouth"
     },
     {
@@ -84,8 +90,8 @@
       "x": 19,
       "y": 9,
       "elevation": 0,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "1",
+      "var": "VAR_GIANT_CHASM_STATE",
+      "var_value": "0",
       "script": "GiantChasm_EventScript_PreventExitWest"
     },
     {
@@ -93,8 +99,8 @@
       "x": 19,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "1",
+      "var": "VAR_GIANT_CHASM_STATE",
+      "var_value": "0",
       "script": "GiantChasm_EventScript_PreventExitWest"
     },
     {
@@ -102,8 +108,8 @@
       "x": 16,
       "y": 4,
       "elevation": 0,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "1",
+      "var": "VAR_GIANT_CHASM_STATE",
+      "var_value": "0",
       "script": "GiantChasm_EventScript_PreventExitNorth"
     },
     {
@@ -111,8 +117,8 @@
       "x": 17,
       "y": 4,
       "elevation": 0,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "1",
+      "var": "VAR_GIANT_CHASM_STATE",
+      "var_value": "0",
       "script": "NULL"
     },
     {
@@ -120,8 +126,8 @@
       "x": 18,
       "y": 4,
       "elevation": 0,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "1",
+      "var": "VAR_GIANT_CHASM_STATE",
+      "var_value": "0",
       "script": "GiantChasm_EventScript_PreventExitNorth"
     }
   ],

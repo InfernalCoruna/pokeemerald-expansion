@@ -516,11 +516,11 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // 
-#define FLAG_UNUSED_0x1DF                    0x1DF // Dexnav
-#define FLAG_UNUSED_0x1E0                    0x1E0 // 
-#define FLAG_UNUSED_0x1E1                    0x1E1 // 
-#define FLAG_UNUSED_0x1E2                    0x1E2 // 
+#define DN_FLAG_SEARCHING             0x1DE // Searching for mon
+#define DN_FLAG_DEXNAV_GET            0x1DF // DexNav shows in start menu
+#define DN_FLAG_DETECTOR_MODE         0x1E0 // Allow player to find hidden mons
+#define FLAG_UNUSED_0x1E1                    0x1E1 // unused
+#define FLAG_UNUSED_0x1E2                    0x1E2 // unused
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 
 // Mystery Gift Flags (Unknown)
