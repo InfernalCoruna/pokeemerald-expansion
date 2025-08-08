@@ -89,6 +89,8 @@ GiantChasm_EventScript_Birch::
 		setflag FLAG_ADVENTURE_STARTED
 		special SetUnlockedPokedexFlags
 		Setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+		setflag FLAG_SYS_NATIONAL_DEX
+	    special EnableNationalPokedex
 		msgbox GiantChasm_Text_Dexnav, MSGBOX_DEFAULT
 		setflag DN_FLAG_DEXNAV_GET 
 		setflag FLAG_SYS_POKENAV_GET
