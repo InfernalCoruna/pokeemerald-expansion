@@ -135,6 +135,8 @@ static const u8 sText_SpAttack[] = _("Sp. Atk");
 static const u8 sText_SpDefense[] = _("Sp. Def");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
+static const u8 sText_PkmnDroppedItem[] = _("{B_SCR_NAME_WITH_PREFIX} dropped\nits {B_LAST_ITEM}!{WAIT_SE}\p");
+static const u8 sText_BagIsFull[] = _("{B_SCR_NAME_WITH_PREFIX} dropped\n{B_LAST_ITEM}!{WAIT_SE}\pBut your bag is full!\p");
 
 const u8 *const gStatNamesTable[NUM_BATTLE_STATS] =
 {
@@ -171,6 +173,8 @@ static const u8 sText_TerrainReturnedToNormal[] = _("The terrain returned to nor
 
 const u8 *const gBattleStringsTable[STRINGID_COUNT] =
 {
+    [STRINGID_BAGISFULL]                            = sText_BagIsFull,
+    [STRINGID_PKMNDROPPEDITEM]                      = sText_PkmnDroppedItem,
     [STRINGID_TRAINER1LOSETEXT]                     = COMPOUND_STRING("{B_TRAINER1_LOSE_TEXT}"),
     [STRINGID_PKMNGAINEDEXP]                        = COMPOUND_STRING("{B_BUFF1} gained{B_BUFF2} {B_BUFF3} Exp. Points!\p"),
     [STRINGID_PKMNGREWTOLV]                         = COMPOUND_STRING("{B_BUFF1} grew to Lv. {B_BUFF2}!{WAIT_SE}\p"),
@@ -1385,6 +1389,12 @@ const u16 gStatusConditionsStringIds[] =
 const u16 gStatus2StringIds[] =
 {
     STRINGID_PKMNWASCONFUSED, STRINGID_PKMNFELLINLOVE, STRINGID_TARGETCANTESCAPENOW, STRINGID_PKMNSUBJECTEDTOTORMENT
+};
+
+const u16 gItemDroppedStringIds[] =
+{
+    [B_MSG_ITEM_DROPPED] = STRINGID_PKMNDROPPEDITEM,
+    [B_MSG_BAG_IS_FULL] = STRINGID_BAGISFULL,
 };
 
 const u16 gDamageNonTypesStartStringIds[] =
