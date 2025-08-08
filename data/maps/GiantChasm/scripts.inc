@@ -83,6 +83,7 @@ GiantChasm_EventScript_Birch::
         giveitem ITEM_BERRY_POUCH 1
         giveitem ITEM_POKE_RADAR 1
         giveitem ITEM_TERA_ORB 1
+		setflag B_FLAG_TERA_ORB_NO_COST
         msgbox GiantChasm_Text_Pokedex, MSGBOX_DEFAULT
 		setflag FLAG_SYS_POKEDEX_GET
 		setflag FLAG_ADVENTURE_STARTED

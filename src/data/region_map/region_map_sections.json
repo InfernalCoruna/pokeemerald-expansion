@@ -1706,6 +1706,10 @@
     {
       "id": "MAPSEC_GIANT_CHASM",
       "name": "Giant Chasm"
+    },
+    {
+      "id": "MAPSEC_GIANT_CHASM2",
+      "name": "Giant_Chasm"
     }
   ]
 }

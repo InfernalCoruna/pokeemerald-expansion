@@ -3,14 +3,14 @@
   "name": "GiantChasmNorth",
   "layout": "LAYOUT_GIANT_CHASM_NORTH",
   "music": "MUS_AWAKEN_LEGEND",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_GIANT_CHASM",
   "requires_flash": false,
   "weather": "WEATHER_RAIN",
   "map_type": "MAP_TYPE_ROUTE",
-  "allow_cycling": false,
+  "allow_cycling": true,
   "allow_escaping": false,
-  "allow_running": false,
-  "show_map_name": true,
+  "allow_running": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
