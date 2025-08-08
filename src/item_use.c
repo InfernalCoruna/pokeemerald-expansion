@@ -1598,6 +1598,13 @@ static void ItemUseOnFieldCB_TownMap(u8 taskId)
     DestroyTask(taskId);
 }
 
+void ItemUseOutOfBattle_PokeBall(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_PokeBall;
+    gBagMenu->newScreenCallback = CB2_ShowPartyMenuForItemUse;
+    Task_FadeAndCloseBagMenu(taskId);
+}
+
 void ItemUseOutOfBattle_TownMap(u8 taskId)
 {
     if (!gTasks[taskId].tUsingRegisteredKeyItem)

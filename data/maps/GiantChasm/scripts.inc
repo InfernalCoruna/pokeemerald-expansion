@@ -77,6 +77,7 @@ GiantChasm_EventScript_Birch::
         giveitem ITEM_EXP_CHARM 1
         giveitem ITEM_MEGA_RING 1
         giveitem ITEM_Z_POWER_RING 1
+		giveitem ITEM_NORMALIUM_Z
         giveitem ITEM_DYNAMAX_BAND 1
         giveitem ITEM_VS_SEEKER 1
         giveitem ITEM_POKEMON_BOX_LINK 1

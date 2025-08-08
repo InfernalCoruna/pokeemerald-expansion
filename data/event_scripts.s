@@ -1161,3 +1161,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GiantChasm/scripts.inc"
 
 	.include "data/maps/GiantChasmNorth/scripts.inc"
+
+	.include "data/maps/Template_Pokecentre/scripts.inc"

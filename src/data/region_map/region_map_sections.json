@@ -1697,11 +1697,19 @@
     },
     {
       "id": "MAPSEC_GIANT_CHASM",
-      "name": "Giant Chasm"
+      "name": "Giant Chasm",
+      "x": 8,
+      "y": 4,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_GIANT_CHASM2",
-      "name": "Giant_Chasm"
+      "name": "Giant_Chasm_N",
+      "x": 8,
+      "y": 4,
+      "width": 1,
+      "height": 1
     }
   ]
 }

@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_test",
       "border_filepath": "data/layouts/GiantChasmNorth/border.bin",
       "blockdata_filepath": "data/layouts/GiantChasmNorth/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEMPLATE_POKECENTRE",
+      "name": "Template_Pokecentre_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Template_Pokecentre/border.bin",
+      "blockdata_filepath": "data/layouts/Template_Pokecentre/map.bin"
     }
   ]
 }

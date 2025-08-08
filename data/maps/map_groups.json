@@ -624,6 +624,7 @@
   ],
   "gMapGroup_OverworldLocations": [
     "GiantChasm",
-    "GiantChasmNorth"
+    "GiantChasmNorth",
+    "Template_Pokecentre"
   ]
 }
